@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Occurred</title>
+
+</head>
+<body>
+
+<h1>Cannot post notice to the server</h1>
+
+<p>Error message</p>
+
+<p th:text="${error}"></p>
+
+<a href="/" style="text-decoration: none; color: white; background: #007bff; padding: 10px 20px; border-radius: 5px;">
+    Back to Home
+</a>
+
+</body>
+</html>
