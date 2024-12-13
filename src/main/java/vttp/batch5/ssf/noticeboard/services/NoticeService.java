@@ -110,7 +110,7 @@ public class NoticeService {
 
                 return ResponseEntity.status(200).body(healthy.toString());
             } else {
-                // Redis is running but empty
+
                 JsonObject unhealthy = Json.createObjectBuilder()
                         .add("status", "DOWN")
                         .add("message", "Application is unhealthy")
@@ -119,7 +119,6 @@ public class NoticeService {
                 return ResponseEntity.status(503).body(unhealthy.toString());
             }
         } catch (Exception e) {
-            // Redis operation failed
             JsonObject unhealthy = Json.createObjectBuilder()
                     .add("status", "DOWN")
                     .add("message", "Application is unhealthy")

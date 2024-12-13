@@ -47,8 +47,3 @@ ENTRYPOINT java -jar noticeboard-2.0.jar
 HEALTHCHECK --interval=1m --start-period=2m CMD curl -s -f http://localhost:4269/status || exit 1
 
 
-#-e SPRING_DATA_REDIS_HOST=junction.proxy.rlwy.net
-#-e SPRING_DATA_REDIS_USERNAME=default
-#-e SPRING_DATA_REDIS_PASSWORD=HvlqUOwexFtBKSRONAvqXRAeuvCnJxod
-#-e SPRING_DATA_REDIS_PORT=12122
-#-e SPRING_DATA_REDIS_DATABASE=0
